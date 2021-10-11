@@ -1,0 +1,293 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap&subset=cyrillic-ext');
+/* font-family: "Roboto", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+/* @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBlackCondensed.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+font-family: "Helvetica Neue", sans-serif; */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    /* padding: 50px; отступ чтобы выделить домашнее задание */
+}
+/* -------------------------------------- */
+
+.header {
+    text-align: center;
+    padding: 25px;
+    margin: 0 0 50px;
+    background-color: #0022ff;
+}
+
+.header__titel {
+    font-size: 24px;
+    font-weight: 700;
+}
+/* ----------------------------------------------- */
+.block-one {
+    margin: 0 0 50px 0;
+}
+
+.block-one__list {
+    max-width: 200px;
+    text-align: center;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto;
+    background-color: #c8fd08;
+}
+
+.block-one__list li{
+    margin: 0 0 15px 0;
+    background: url("../img/icon.png") 90% 0 / 20px no-repeat;
+    min-height: 24px; /*задаём min-height по высоте иконки чтобы иконка не обрезалась*/
+}
+/* ------------------------------------------------------------ */
+.block-two {
+    max-width: 230px;
+    background-color: #F5F5F5;
+    margin: 0 auto 50px;
+}
+.block-two__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #4B4B4B;
+    margin: 0 0 37px 0;
+}
+.block-two__list li{
+    min-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+    margin: 0 0 16px 0;
+}
+.list__item-place {
+    padding: 0 0 0 30px;
+    background: url("../img/place_24px.png") 0 4px no-repeat;
+}
+.list__item-tel {
+    padding: 0 0 0 30px;
+    background: url("../img/smartphone_24px.png") 0 3px no-repeat;
+}
+.list__item-email {
+    padding: 0 0 0 30px;
+    background: url("../img/email_24px.png") 0 2px no-repeat;
+}
+.list__item-time {
+    padding: 0 0 0 30px;
+    background: url("../img/timer_24px.png") 0 4px no-repeat;
+}
+/* ------------------------------------------------------------------------- */
+
+.block-three {
+    min-height: 800px;
+    background: url("../img/BGImage.png") 50% 50% / cover no-repeat;
+    padding: 280px 647px 0 210px;
+    margin: 0 0 300px 0;
+}
+
+.block-three__title {
+    max-width: 583px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 56px;
+    color: #fff;
+    margin: 0 0 48px 0;
+}
+
+.block-three__button {
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px 49px 12px 20px;
+    border-radius: 2px;
+    background: url("../img/arrow_forward_24px.png") 94% 50% no-repeat, linear-gradient(110deg, rgba(196,11,11,1) 80%, rgba(227,11,11,1) 80%);
+    margin: 0 0 312px 0;
+}
+/* --------------------------------------------------------- */
+
+.block-for {
+    min-height: 580px;
+    padding: 112px 0 0 0;
+    background: url("../img/blue-Image.png") 50% 50% / cover no-repeat;
+    margin: 0 0 200px 0;
+}
+
+.block-for__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    
+}
+
+.block-for__background {
+    margin: -191px 255px -135px auto;
+    width: 498px;
+    height: 315px;
+    background: url("../img/car.png") no-repeat;
+    
+}
+
+.whoweare__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #D5D5D5;
+    margin: 0 0 35px 0; /*отступ сделан на глаз, меньше чем по макету, т.к. нужно учесть высоту самого объекта*/
+    background: url("../img/logo.png") 0 0 no-repeat;
+    padding: 0 0 0 33px; /*30пк это растояние от текста до логотипа 16пк + размер логотипа 17пк = 33*/
+}
+
+.block-for__title {
+    max-width: 411px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #fff;
+    margin: 0 0 75px;
+}
+
+
+.block-for__item {
+    display: inline-block;
+    width: 24%;
+    /* padding: 0 24px 0 0; */
+    vertical-align: top;
+}
+
+.item__image {
+    display: inline-block;
+    width: 76px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.item__body {
+    display: inline-block;
+    padding: 0 0 0 11px;
+    vertical-align: top;
+}
+
+.item__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #C40B0B;
+}
+
+.item__text {
+    max-width: 130px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #F5F5F5;
+}
+
+footer h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
